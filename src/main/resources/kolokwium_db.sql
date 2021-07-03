@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS tmep_jaz;
-USE tmep_jaz;
+CREATE DATABASE IF NOT EXISTS jaz_zaliczenie;
+USE jaz_zaliczenie;
 
 DROP TABLE IF EXISTS currency;
 CREATE TABLE currency
