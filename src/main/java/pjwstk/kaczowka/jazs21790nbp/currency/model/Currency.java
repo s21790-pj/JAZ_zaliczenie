@@ -1,5 +1,6 @@
 package pjwstk.kaczowka.jazs21790nbp.currency.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import pjwstk.kaczowka.jazs21790nbp.currency.configuration.CurrencyConfiguration;
 
 import javax.persistence.Entity;
@@ -14,13 +15,20 @@ public class Currency {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty(notes = "id of currency")
     private Long id;
 
+    @ApiModelProperty(notes = "Name of searching currency")
     private String cur_name;
+    @ApiModelProperty(notes = "Start date for search")
     private LocalDate start_search_date;
+    @ApiModelProperty(notes = "End date for search")
     private LocalDate end_search_date;
+    @ApiModelProperty(notes = "The average exchange rate of the currency in a given range")
     private double avg_currency;
+    @ApiModelProperty(notes = "Search date")
     private LocalDate search_date;
+    @ApiModelProperty(notes = "Search time")
     private LocalTime search_time;
 
     public Currency() {
