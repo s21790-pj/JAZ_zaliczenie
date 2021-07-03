@@ -50,4 +50,8 @@ public class CurrencyService {
         return avg_currency;
 
     }
+
+    public List<Currency> findAll(){
+        return curRepository.findAll();
+    }
 }
